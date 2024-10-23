@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community - Travel Website</title>
+</head>
+<style>
+        /* General */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1, h2, h3 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+
+        a {
+            color: #FF6F61;
+            text-decoration: none;
+        }
+
+        /* Header Section */
+        .community-header {
+            background-image: url('./community.jpg');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: white;
+            padding: 80px 20px;
+        }
+
+        .community-header h1 {
+            font-size: 3rem;
+        }
+
+        .community-header p {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .cta-button {
+            padding: 10px 20px;
+            background-color: #FF6F61;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .cta-button:hover {
+            background-color: #FF4A3A;
+        }
+
+        /* Traveler Stories Section */
+        .stories {
+            padding: 50px;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+
+        .stories h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+        .stories-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .story-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .story-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .story-card h3 {
+            margin-top: 15px;
+            font-size: 1.5rem;
+        }
+
+        .story-card p {
+            font-size: 1rem;
+            color: #777;
+        }
+
+        /* Gallery Section */
+        .gallery {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .gallery h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .gallery-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #FF6F61;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .gallery-button:hover {
+            background-color: #FF4A3A;
+        }
+
+        /* Share Your Story Section */
+        .share-story {
+            padding: 50px;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+
+        .share-story h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .share-story form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .share-story label {
+            margin-top: 15px;
+            font-size: 1rem;
+        }
+
+        .share-story input,
+        .share-story textarea {
+            width: 100%;
+            max-width: 500px;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .share-story button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #FF6F61;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .share-story button:hover {
+            background-color: #FF4A3A;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .stories-grid, .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .stories-grid, .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-button, .gallery-button, .share-story button {
+                width: 100%;
+            }
+        }
+
+</style>
+<body>
+    <!-- Header Section -->
+    <header class="community-header">
+        <h1>Our Travel Community</h1>
+        <p>Share your stories, connect with fellow travelers, and get inspired for your next journey!</p>
+        <button class="cta-button">Share Your Story</button>
+    </header>
+
+    <!-- Traveler Stories Section -->
+    <section class="stories">
+        <h2>Traveler Stories</h2>
+        <div class="stories-grid">
+            <div class="story-card">
+                <img src="./john.jpg" alt="Traveler Story">
+                <h3>John's Journey to the Alps</h3>
+                <p>"Hiking through the Swiss Alps was an unforgettable experience. The views were breathtaking, and the people were incredibly welcoming."</p>
+            </div>
+            <div class="story-card">
+                <img src="./bali3.jpg" alt="Traveler Story">
+                <h3>Sophia's Beach Adventure in Bali</h3>
+                <p>"Relaxing by the beach in Bali, exploring temples, and enjoying the local cuisine was a perfect escape."</p>
+            </div>
+            <div class="story-card">
+                <img src="./tokyo2.jpg" alt="Traveler Story">
+                <h3>David's City Escape to Tokyo</h3>
+                <p>"Tokyo is a city like no other. The mix of modern technology and ancient traditions makes every corner worth exploring."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <h2>Community Photo Gallery</h2>
+        <div class="gallery-grid">
+            <img src="3.jpg" alt="Gallery Image">
+            <img src="4.jpg" alt="Gallery Image">
+            <img src="2.jpg" alt="Gallery Image">
+            <img src="1.jpg" alt="Gallery Image">
+        </div>
+        <button class="gallery-button">View More Photos</button>
+    </section>
+
+    <!-- Share Your Story Section -->
+    <section class="share-story">
+        <h2>Share Your Travel Story</h2>
+        <p>We’d love to hear about your adventures! Submit your story and photos below:</p>
+        <form id="story-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            
+            <label for="story">Your Story:</label>
+            <textarea id="story" name="story" rows="5" placeholder="Share your travel story..." required></textarea>
+            
+            <label for="photo">Upload a Photo:</label>
+            <input type="file" id="photo" name="photo" accept="image/*" required>
+
+            <button type="submit">Submit Story</button>
+        </form>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+        // Story Submission Form
+        document.getElementById('story-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            // Form data (you can send this data to your backend using AJAX or an API)
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const story = document.getElementById('story').value;
+            const photo = document.getElementById('photo').files[0];
+
+            // Basic validation (you can add more)
+            if (name && email && story && photo) {
+                alert('Thank you for submitting your story! We will review it and publish it soon.');
+                // Reset form after submission
+                document.getElementById('story-form').reset();
+            } else {
+                alert('Please fill in all the fields and upload a photo.');
+            }
+        });
+
+    </script>
+</body>
+</html>

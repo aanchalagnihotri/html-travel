@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Deals - Travel Website</title>
+</head>
+<style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1, h2, h3 {
+            color: #333;
+        }
+
+        p {
+            color: #666;
+        }
+
+        a {
+            color: #FF6F61;
+            text-decoration: none;
+        }
+
+        /* Header Section */
+        .deals-header {
+            background-image: url('./special.jpg');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            color: white;
+            padding: 80px 20px;
+        }
+
+        .deals-header h1 {
+            font-size: 3rem;
+        }
+
+        .deals-header p {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: rgb(70, 39, 39);
+        }
+
+        .cta-button {
+            padding: 10px 20px;
+            background-color: #FF6F61;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .cta-button:hover {
+            background-color: #FF4A3A;
+        }
+
+        /* Featured Deals Section */
+        .featured-deals {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .featured-deals h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+        .featured-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .deal-card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .deal-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .deal-card h3 {
+            margin-top: 15px;
+            font-size: 1.5rem;
+        }
+
+        .deal-card p {
+            font-size: 1rem;
+            color: #777;
+        }
+
+        .deal-button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #FF6F61;
+            border: none;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .deal-button:hover {
+            background-color: #FF4A3A;
+        }
+
+        /* Current Deals Section */
+        .current-deals {
+            padding: 50px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        .current-deals h2 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+        }
+
+        .deal-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .deal-list li {
+            background-color: white;
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .deal-list h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .deal-list p {
+            font-size: 1rem;
+            color: #777;
+        }
+
+        /* Subscribe Section */
+        .subscribe {
+            padding: 50px;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+
+        .subscribe h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .subscribe p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .subscribe form {
+            display: flex;
+            justify-content: center;
+        }
+
+        .subscribe input[type="email"] {
+            padding: 10px;
+            font-size: 16px;
+            width: 300px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+
+        .subscribe button {
+            padding: 10px 20px;
+            background-color: #FF6F61;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .subscribe button:hover {
+            background-color: #FF4A3A;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .featured-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .featured-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-button, .deal-button, .subscribe button {
+                width: 100%;
+            }
+        }
+
+</style>
+<body>
+    <!-- Header Section -->
+    <header class="deals-header">
+        <h1>Special Travel Deals</h1>
+        <p>Discover the best deals and offers to plan your next adventure at unbeatable prices!</p>
+        <button class="cta-button">Explore Current Deals</button>
+    </header>
+
+    <!-- Featured Deals Section -->
+    <section class="featured-deals">
+        <h2>Featured Deals</h2>
+        <div class="featured-grid">
+            <div class="deal-card">
+                <img src="bali2.jpg" alt="Beach Deal">
+                <h3>Tropical Escape to Bali - 20% Off</h3>
+                <p>Enjoy a luxurious stay in Bali with 20% off for a limited time. Perfect for a beach getaway.</p>
+                <button class="deal-button">Book Now</button>
+            </div>
+            <div class="deal-card">
+                <img src="./europe.jpg" alt="Europe Deal">
+                <h3>Explore Europe - 15% Discount</h3>
+                <p>Plan a European adventure and save 15% on flights and hotels. Explore iconic cities!</p>
+                <button class="deal-button">Book Now</button>
+            </div>
+            <div class="deal-card">
+                <img src="./mountains.jpg" alt="Adventure Deal">
+                <h3>Mountain Adventure in the Alps - Save $500</h3>
+                <p>Book a thrilling mountain adventure in the Swiss Alps and save $500 on your trip.</p>
+                <button class="deal-button">Book Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Deals List Section -->
+    <section class="current-deals">
+        <h2>Current Offers</h2>
+        <ul class="deal-list">
+            <li>
+                <h3>Weekend Getaway to Paris - 10% Off Flights</h3>
+                <p>Book a romantic weekend in Paris and save 10% on round-trip flights. Offer valid for travel in November.</p>
+            </li>
+            <li>
+                <h3>5-Star Resort in Maldives - Save $300</h3>
+                <p>Stay at a luxurious resort in the Maldives and get $300 off when booking for 5 nights or more.</p>
+            </li>
+            <li>
+                <h3>New York City Staycation - 25% Off Hotels</h3>
+                <p>Save 25% on hotel bookings in NYC. Perfect for a city break close to home.</p>
+            </li>
+            <li>
+                <h3>Tokyo Adventure - Discounted City Tours</h3>
+                <p>Explore Tokyo with a 15% discount on guided city tours and day trips.</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Subscribe to Deal Alerts Section -->
+    <section class="subscribe">
+        <h2>Get the Latest Deals Delivered to Your Inbox</h2>
+        <p>Subscribe to receive exclusive travel deals and offers before anyone else!</p>
+        <form id="subscribe-form">
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe Now</button>
+        </form>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+        // Subscription Form Handler
+        document.getElementById('subscribe-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const email = document.getElementById('email').value;
+
+            // Basic email validation
+            if (email) {
+                alert('Thank you for subscribing! You will receive the latest deals in your inbox.');
+                document.getElementById('subscribe-form').reset();
+            } else {
+                alert('Please enter a valid email address.');
+            }
+        });
+
+    </script>
+</body>
+</html>
